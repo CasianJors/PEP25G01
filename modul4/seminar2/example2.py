@@ -19,6 +19,7 @@ finally:
 
 
 # recursivitate
+# factorialn = 1*2*3*4*5 = 5!
 
 def factorial1(n):
     result = 1
@@ -26,14 +27,22 @@ def factorial1(n):
         result *= i
     return result
 
-
 print(factorial1(5))
 
 
 def factorial2(n):
     if n == 1:
         return 1
-    return factorial2(n - 1) * n
+    return factorial2(n - 1)
 
+# prima apelare       factorial2(4) * 5   => factorial(3) * 4 * 5 => factorial(2) * 3 * 4 * 5 => factorial(1) * 2 * 3 * 4 * 5 => 1 * 2 * 3 * 4 * 5
 
-print(factorial2(995))
+#a doua apelare       factorial(3) * 4 => factorial(2) * 3 * 4 => factorial(1) * 2 * 3 * 4 => 1* 2 * 3 * 4
+
+#a treia apelare      factorial(2) * 3 => factorial(1) * 2 * 3 => 1 * 2 * 3
+
+# a patra apelare     factorial(1) * 2 => 1*2
+
+#a cincia apelare     1
+
+print(factorial2(5))

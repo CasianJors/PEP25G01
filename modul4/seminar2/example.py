@@ -1,8 +1,19 @@
 # dict
 
-my_dict1 = {'example': True}
-my_dict2 = dict(test=123)
+leguma_pret ={                      # dict(key:value, key2:value2)
+    'cartof' : '5 lei',
+    'morcov' : '10 lei',
+    'ceapa': "3 lei"
+}
 
+
+for key, value in leguma_pret.items():
+    print(f' pretul legumei {key} este {value}')
+
+
+my_dict1 = {'example': True}
+
+my_dict2 = dict(test=123)
 # update
 print(my_dict1)
 my_dict1.update({'example2': False})
@@ -12,9 +23,12 @@ print(my_dict1)
 my_dict1['example2'] = (False, False)
 print(my_dict1)
 
+
+
 # get
 
 print(my_dict1.get('example2'))
+
 print(my_dict1)
 print(my_dict1.get('example3', "No Value found"))
 
@@ -26,7 +40,6 @@ print(my_dict1['example2'])
 print(my_dict1)
 print(my_dict1.pop('example2'))
 print(my_dict1)
-
 # del
 
 del my_dict1['example']
