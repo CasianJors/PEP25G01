@@ -26,14 +26,15 @@ def check_parola(password):
 
     return lungime and cifra and caracter and upper
 
-username = input("Introduceti userul")
-incercare = 1
-while incercare <= 3:
-    print(f'esti la incercarea {incercare}')
-    parola = input("Introduceti parola")
-    if check_parola(parola):
-        print("Ai intrat cu succes")
-        break
-    else:
-        print("Incearca din nou")
-        incercare += 1
+if __name__ == '__main__':
+    username = input("Introduceti userul")
+    incercare = 1
+    while incercare <= 3:
+        print(f'esti la incercarea {incercare}')
+        parola = input("Introduceti parola")
+        if check_parola(parola):
+            print("Ai intrat cu succes")
+            break
+        else:
+            print("Incearca din nou")
+            incercare += 1
