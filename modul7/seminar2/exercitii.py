@@ -13,9 +13,6 @@ Extindere:
 """
 
 
-
-
-
 # Exercițiul 2: Crearea unei clase Car cu încapsulare
 
 # TODO Scrieți o clasă Python numită Car care demonstrează încapsularea de bază:
@@ -30,8 +27,6 @@ Metode:
     brake: Scade viteza cu o valoare dată, asigurându-se că nu scade sub 0.
     get_speed: Returnează viteza curentă (metodă publică pentru accesarea atributului privat).
 """
-
-
 
 
 
@@ -178,10 +173,17 @@ if __name__ == "__main__":
 
     # Simularea unui atac
     player.attack(boss)
-    print("Sănătatea bossului:", boss._health)  # Așteptat: 500 - damage_value
+    print("Sănătatea bossului:", boss.health)  # Așteptat: 500 - damage_value
 
     # Verificați dacă bossul este învins după un atac
     if boss.is_defeated():
         print("Boss învins!")
     else:
         print("Bossul încă luptă!")
+
+
+"""             HOMEWORK            """
+
+# TODO   -Boss also takes player's damage each time he is attacked ( example: player damages boss -> boss takes damage -> boss damages back)
+#        -Boss' damage is a random number between 1 and 10 (import random)
+#        -Make the game run in a loop, until one of the players is defeated (for this, you will also need to implement player take damage and is defeated)
