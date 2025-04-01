@@ -15,5 +15,9 @@ class EnumeratorCuvant():
         return valoare
 # 0123456 < 7
 # alfabet -> len(alfabet) = 7
-for i, litera in EnumeratorCuvant("alfabet"):
-    print(f"{i}: {litera}")
+nume = "Casian"
+
+
+if __name__ == "__main__":
+    for i, litera in EnumeratorCuvant("alfabet"):
+        print(f"{i}: {litera}")

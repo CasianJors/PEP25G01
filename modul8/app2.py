@@ -23,6 +23,7 @@ masina6 = Masina("BMW", 4, "negru", 2017, 22000)
 masina7 = Masina("Volvo", 4, "gri", 2017, 27000)
 
 masini = [masina7,masina6,masina5,masina4,masina3,masina1,masina2]
+
 #a
 medie  = masina7 + masina6 + masina5 + masina4 + masina3 + masina1+ masina2
 print('media este:', medie.getPret() /len(masini))
